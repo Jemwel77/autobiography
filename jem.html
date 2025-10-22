@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Autobiography</title>
+  <style>
+    /* Background Gradient */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #74ABE2, #5563DE);
+      margin: 0;
+      color: #fff;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 15px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #FFD700;
+      text-decoration: underline;
+    }
+
+    /* Header Section */
+    header {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      border: 4px solid #fff;
+      margin-bottom: 15px;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 5px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #e0e0e0;
+    }
+
+    /* Section Styles */
+    section {
+      background-color: rgba(255, 255, 255, 0.15);
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 15px;
+      width: 80%;
+      max-width: 900px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    section h2 {
+      text-align: center;
+      color: #FFD700;
+    }
+
+    section p {
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    /* Hobbies Section */
+    .hobbies {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .hobby {
+      background-color: rgba(255, 255, 255, 0.2);
+      width: 200px;
+      margin: 10px;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .hobby:hover {
+      transform: scale(1.05);
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    /* Contact Form */
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      outline: none;
+    }
+
+    button {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 10px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.2);
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#education">Education</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Header -->
+  <header>
+    <div>
+    <img src="jemwelpic.jpg"alt="Profile Picture">
+    <h1>Hello, I'm Jemwel!</h1>
+    <p>Aspiring Student | Dreamer | Learner</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi! My name is Jemwl Torreon, and I’m a 17-year-old student currently studying at Lapu-Lapu City College. 
+      I’m passionate about technology, science, and creative writing. My dream is to become a software engineer 
+      and create innovations that help people live better lives.
+    </p>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>My Education</h2>
+    <p>
+      I started my academic journey at Bluebird Elementary School, where I first discovered my love for computers. 
+      I’m now in my senior year at Greenfield High, taking advanced classes in programming, physics, and mathematics. 
+      I also participate in the robotics club and science fairs every year.
+    </p>
+  </section>
+
+  <!-- Hobbies Section -->
+  <section id="hobbies">
+    <h2>My Hobbies</h2>
+    <div class="hobbies">
+      <div class="hobby">
+        <h3>🎮 Gaming</h3>
+        <p>I enjoy strategy and adventure games that challenge my mind.</p>
+      </div>
+      <div class="hobby">
+        <h3>📚 Reading</h3>
+        <p>Science fiction and fantasy books are my favorite genres.</p>
+      </div>
+      <div class="hobby">
+        <h3>💻 Coding</h3>
+        <p>I love building websites and learning new programming languages.</p>
+      </div>
+      <div class="hobby">
+        <h3>🎵 Music</h3>
+        <p>Listening to music helps me relax and stay creative.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>JEMWEL TORREON</p>
+  </footer>
+
+  <script>
+    // Simple form validation alert
+    function validateForm() {
+      alert("Thank you for reaching out! Your message has been sent successfully.");
+      return false; // Prevent real submission (for demo)
+    }
+  </script>
+
+</body>
+</html>
